@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--Title-->
+    <title>Add Employees</title>
+     <!-- CSS File-->
+    <link rel="stylesheet" href="./addemp.css">
+</head>
+<body>
+	<h2 class="name">New Employees</h2>
+    <!--Table-->
+    <table>
+        <!--Row-1-->
+        <tr>
+            <!--Column-1-->
+            <td>
+                <!--Form-->
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                	
+                  <!--div-1-->
+                  <div class="form1">
+
+                    <div>
+                        
+                        <!--Validation Error-->
+                        <label for="userName">Enter Name</label>
+                        <label class="validation-error hide" id="userNamevalidationError">This field is required</label>
+                        <!--Input User Name-->
+                        <input type="text" name="userName" id="userName" placeholder="">
+                    </div>
+                    <!--div-2-->
+                    <div>
+                        
+                        <!--Validation Error-->
+                        <label for="email">Enter Profession</label>
+                        <label class="validation-error hide" id="emailvalidationError" >This field is required</label>
+                        <!--Input Roll No-->
+                        <input type="text" name="email" id="email" placeholder="">
+                    </div>
+                    <!--div-3-->
+                    <div>
+                        
+                        <!--Validation Error-->
+                        <label for="age">Enter Age</label>
+                        <label class="validation-error hide" id="agevalidationError">This field is required</label>
+                       <!--Input Student Class-->
+                        <input type="number" name="age" id="age" placeholder="">
+                    </div>
+                
+
+                </div>
+                    <!--div-6-->
+                    <div class="form-action-buttons">
+                        <!--Input Button-->
+                        <input type="submit" value="Add User">
+                    </div>
+                </form>
+                <div>
+                    <p>Added Employees</p>
+                </div>
+            </td>
+            
+            
+            <!--Column-2-->
+            <tr1>
+                <!--Nested Table-->
+                <table class="list" id="stdlist">
+                    <!--Table Head-->
+                    <thead>
+                        <!--Row-2-->
+                        <tr>
+           
+                        </tr>
+                    </thead>
+                    <!--Table Body-->
+                    <tbody>
+                    </tbody>
+                </table>
+            </tr1>
+        </tr>
+    </table>
+    <!-- JS File-->
+    <script src="./addemp.js"></script>
+</body>
+</html>
